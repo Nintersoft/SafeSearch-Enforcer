@@ -1,6 +1,6 @@
 #SafeSearch Enforcer
 
-Esta extenção força motores de busca como Google, Bing and Yahoo a usarem o filtro de conteúdo adulto.
+This extension enforces safesearch at search engines like Google, Bing and Yahoo.
 
 SafeSearch Enforcer open source code
 - You can download and make some modifications in the source code, according to our Open Source Policy (by Nintersoft).
@@ -23,7 +23,7 @@ Mauro Mascarenhas - Nintersoft.
 ##PT
 #SafeSearch Enforcer
 
-This extension enforces safesearch at search engines like Google, Bing and Yahoo.
+Esta extenção força motores de busca como Google, Bing and Yahoo a usarem o filtro de conteúdo adulto.
 
 Código aberto SafeSearch Enforcer
 - Você poderá baixar e fazer suas modificações à vontade, conforme a licença de código aberto Nintersoft.
