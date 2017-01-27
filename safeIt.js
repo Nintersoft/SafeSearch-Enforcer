@@ -48,7 +48,6 @@ function chooseSafe(requestDetails){
 	
 	// Loads a new and safe URL if necessary 
 	if (URL != urlTemp && canReload){
-		console.log("trocou :v");
 		return{
 			redirectUrl : urlTemp
 		};
@@ -65,7 +64,6 @@ function changeYandex(url){
 	var parameter = params.get("text");
 	
 	var newURL = "https://www.google.com/search?q=" + parameter + "&safe=active&gws_rd=cr";
-	console.log("New URL : " + newURL);
 	return	newURL;
 }
 
@@ -74,21 +72,16 @@ function changeYandex(url){
 */
 
 function safeIt(url, paramName, paramValue){
-	console.log("Seems to be working, isn't it? Look at the url : " + url);
 
 	let params = new URL(url).searchParams;
 	var parameter = params.get(paramName);
 
-	console.log("SS parameter : " + parameter);
-
 	if (parameter === null){
 		url += ('&' + paramName + "=" + paramValue);
-		console.log("New URL : " + url);
 	}
 	
 	else if (parameter != paramValue){
 		url = replaceUrlParam(url, paramName, paramValue);
-		console.log("New URL : " + url);
 	}
 	
 	return url;	
