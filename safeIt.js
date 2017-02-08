@@ -23,6 +23,7 @@ function chooseSafe(requestDetails){
 	var pBing = new RegExp(".bing.");
 	var pYahoo = new RegExp("search.yahoo.com");
 	var pYandex = new RegExp("yandex.");
+	var pDDG = new RegExp("duckduckgo.");
 	var pSearch = new RegExp("/search");
 	var urlTemp;
 	
@@ -43,7 +44,11 @@ function chooseSafe(requestDetails){
 	}
 	else if (pSearch.test(URL) && pYandex.test(URL)){
 		canReload = true;
-		urlTemp = changeYandex(URL);
+		urlTemp = safeIt(URL, 'fyandex', '1');
+	}
+	else if (pDDG.test(URL)){
+		canReload = true;
+		urlTemp = safeIt(URL, 'kp', '1');
 	}
 	
 	// Loads a new and safe URL if necessary 
@@ -52,19 +57,6 @@ function chooseSafe(requestDetails){
 			redirectUrl : urlTemp
 		};
 	}
-}
-
-/*
-	This function just substitite Yandex by Google, once there is any known parameter
-	enforcing SafeSearch in Yandex (If you know one, please open a request or issue).
-*/
-
-function changeYandex(url){
-	let params = new URL(url).searchParams;
-	var parameter = params.get("text");
-	
-	var newURL = "https://www.google.com/search?q=" + parameter + "&safe=active&gws_rd=cr";
-	return	newURL;
 }
 
 /*
