@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "SafeSearch Enforcer",
+    "description": "Nome da extensão."
+  },
+
+  "extensionDescription": {
+    "message": "Esta extenção força motores de busca como Google, Bing e Yahoo a usarem o filtro de conteúdo adulto.",
+    "description": "Descrição da extensão."
+  }
+}
