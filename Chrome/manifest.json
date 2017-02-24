@@ -12,7 +12,7 @@
 		"96": "icons/Logo_96.png"
 	},
 
-    "permissions": ["webRequest", "webRequestBlocking"],
+        "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/"],
 
 	"background": {
 		"scripts": ["safeIt.js"]

@@ -25,12 +25,22 @@ function chooseSafe(requestDetails){
 	var pYandex = new RegExp("yandex.");
 	var pDDG = new RegExp("duckduckgo.");
 	var pSearch = new RegExp("/search");
+	var gSearch = new RegExp("/webhp");
+	var cSearch = new RegExp("/?gws_rd");
 	var urlTemp;
 	
 	var canReload = false;
 	
 	// ---- ---- ---- ---- ---- ---- ----
 	if (pSearch.test(URL) && pGoogle.test(URL)){
+		canReload = true;
+		urlTemp = safeIt(URL, 'safe', 'active');
+	}
+	else if (gSearch.test(URL) && pGoogle.test(URL)){
+		canReload = true;
+		urlTemp = safeIt(URL, 'safe', 'active');
+	}
+	else if (cSearch.test(URL) && pGoogle.test(URL)){
 		canReload = true;
 		urlTemp = safeIt(URL, 'safe', 'active');
 	}
