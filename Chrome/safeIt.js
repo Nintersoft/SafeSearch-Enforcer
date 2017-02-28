@@ -1,8 +1,8 @@
 /*-----------------------------------------------------------------------------------
 	Author: Mauro Mascarenhas
 	Organization link: https://www.nintersoft.com/
-	Last update: 21/01/2017
-	Version: 1.0
+	Last update: 28/02/2017
+	Version: 1.1.6
 -----------------------------------------------------------------------------------*/
 
 //------------------------------------ LISTENER -------------------------------------
@@ -23,6 +23,7 @@ function chooseSafe(requestDetails){
 	var pBing = new RegExp(".bing.");
 	var pYahoo = new RegExp("search.yahoo.com");
 	var pYandex = new RegExp("yandex.");
+	var pSearchDDG = new RegExp("q=");
 	var pDDG = new RegExp("duckduckgo.");
 	var pSearch = new RegExp("/search");
 	var gSearch = new RegExp("/webhp");
@@ -56,7 +57,7 @@ function chooseSafe(requestDetails){
 		canReload = true;
 		urlTemp = safeIt(URL, 'fyandex', '1');
 	}
-	else if (pDDG.test(URL)){
+	else if (pSearchDDG.test(URL) && pDDG.test(URL)){
 		canReload = true;
 		urlTemp = safeIt(URL, 'kp', '1');
 	}
