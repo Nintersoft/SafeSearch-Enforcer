@@ -1,4 +1,4 @@
-#SafeSearch Enforcer
+# SafeSearch Enforcer
 
 This extension enforces safesearch at search engines like Google, Bing and Yahoo.
 
@@ -20,8 +20,9 @@ Graciously,
 Mauro Mascarenhas - Nintersoft.
 
 =============
-##PT
-#SafeSearch Enforcer
+
+## PT
+# SafeSearch Enforcer
 
 Esta extenção força motores de busca como Google, Bing and Yahoo a usarem o filtro de conteúdo adulto.
 

@@ -1,8 +1,8 @@
 /*-----------------------------------------------------------------------------------
 	Author: Mauro Mascarenhas
 	Organization link: https://www.nintersoft.com/
-	Last update: 02/07/2017
-	Version: 1.1.7
+	Last update: 06/11/2017
+	Version: 1.1.9
 -----------------------------------------------------------------------------------*/
 
 //------------------------------------ LISTENER -------------------------------------
@@ -19,13 +19,15 @@ function chooseSafe(requestDetails){
 	
 	// ---- Variable declarations ----
 	var URL = requestDetails.url;
-	var pGoogle = new RegExp("www.google.");
+	var pGoogle = new RegExp(".google.");
 	var pBing = new RegExp(".bing.");
 	var pYahoo = new RegExp("search.yahoo.com");
 	var pYandex = new RegExp("yandex.");
 	var pDDG = new RegExp("duckduckgo.");
+	var pReddit = new RegExp(".reddit.com");
 	var pSearchDDG = new RegExp("q=");
-	var pSearch = new RegExp("/search");
+	var pSearch = new RegExp("/search[^/]");
+	var pRDDTView = new RegExp("over18");
 	var urlTemp;
 	
 	var canReload = false;
@@ -51,7 +53,11 @@ function chooseSafe(requestDetails){
 		canReload = true;
 		urlTemp = safeIt(URL, 'kp', '1');
 	}
-	
+	else if (pReddit.test(URL) && pRDDTView.test(URL)){
+		canReload = true;
+		urlTemp = "http://www.reddit.com/";
+	}
+
 	// Loads a new and safe URL if necessary 
 	if (URL != urlTemp && canReload){
 		return{
@@ -93,5 +99,5 @@ function replaceUrlParam(url, paramName, paramValue){
     if(url.search(pattern)>=0){
         return url.replace(pattern,'$1' + paramValue + '$2');
     }
-    return url + (url.indexOf('?')>0 ? '&' : '?') + paramName + '=' + paramValue 
+    return url + (url.indexOf('?')>0 ? '&' : '?') + paramName + '=' + paramValue;
 }
