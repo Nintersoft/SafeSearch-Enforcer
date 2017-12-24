@@ -2,14 +2,14 @@
 	Author: Mauro Mascarenhas
 	Organization link: https://www.nintersoft.com/
 	Last update: 06/11/2017
-	Version: 1.1.9
+	Version: 1.1.10
 -----------------------------------------------------------------------------------*/
 
 //------------------------------------ LISTENER -------------------------------------
 
 browser.webRequest.onBeforeRequest.addListener(
   chooseSafe,
-  {urls: ["<all_urls>"]},
+  {urls: ["<all_urls>"], types: ["main_frame","sub_frame"]},
   ["blocking"]
 );
 
