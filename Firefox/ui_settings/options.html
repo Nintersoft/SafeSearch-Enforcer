@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="options.js"></script>
+    <link rel="stylesheet" type="text/css" href="options.css">
+  </head>
+
+  <body>
+
+    <h1>SafeSearch Enforcer Additional Settings</h1>
+
+    <form id="settingsform">
+        <p>You can also block access to specific websites through this extension.</p><br />
+        <label>Enable blacklist: </label>
+        <br />
+        <div class="radioitem">
+            <input type="radio" id="benable" class="supmargin" name="blacklist" value="enable"> <label for="benable">Enable</label> <br>
+        </div>
+        <div class="radioitem">
+            <input type="radio" id="bdisable" class="supmargin" name="blacklist" value="disable"> <label for="bdisable">Disable</label>
+        </div>
+
+        <br />
+        <label>Blacklisted websites (one per line): <br />
+            <textarea name="blacklisted" class="blacklistarea supmargin" placeholder="sitetobeblocked.com&#10;othersitetobeblocked.com"></textarea>
+        </label>
+
+        <br />
+        <button class="button supmargin" type="submit">SAVE</button>
+        <button class="button supmargin" type="reset">RESET</button>
+    </form>
+
+  </body>
+
+</html>

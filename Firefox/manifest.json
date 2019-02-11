@@ -2,9 +2,9 @@
 	"manifest_version": 2,
 	"name": "__MSG_extensionName__",
 	"version": "1.1.10",
-	
+
 	"default_locale": "en_GB",
-	
+
 	"description": "__MSG_extensionDescription__",
 
 	"icons": {
@@ -12,9 +12,20 @@
 		"96": "icons/Logo_96.png"
 	},
 
-    "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/"],
+    "permissions": ["storage", "webRequest", "webRequestBlocking", "http://*/", "https://*/"],
 
 	"background": {
-		"scripts": ["safeIt.js"]
+		"scripts": ["safety_filter/safeit.js"]
+	},
+
+	"options_ui" : {
+		"page" : "ui_settings/options.html"
+	},
+
+	"applications" : {
+		"gecko" : {
+			"id" : "{54b996b1-a362-4162-b35c-0102d9de0dac}"
+		}
 	}
+
 }
