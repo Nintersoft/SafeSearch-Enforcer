@@ -7,5 +7,10 @@
   "extensionDescription": {
     "message": "This extension enforces safesearch at search engines like Google, Bing and Yahoo",
     "description": "Description of the extension."
+  },
+
+  "extensionWebsite": {
+    "message" : "https://www.nintersoft.com/en/portfolio/safesearch-enforcer-2/",
+    "description" : "Homepage URL"
   }
 }

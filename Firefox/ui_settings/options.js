@@ -1,22 +1,28 @@
 function saveOptions(e) {
   e.preventDefault();
+  
   browser.storage.sync.set({
     enableb: document.querySelector("#benable").checked,
     blacklisted: document.querySelector('[name="blacklisted"]').value
   });
+
+  browser.runtime.reload();
 }
 
 function restoreDefault(e) {
   e.preventDefault();
+
   document.querySelector("#bdisable").checked = true;
   document.querySelector('[name="blacklisted"]').value = "";
   browser.storage.sync.clear();
+  
+  browser.runtime.reload();
 }
 
 function restoreOptions() {
 
   function setCurrentChoice(result) {
-    var enableb = result.benable == null ? false : true;
+    var enableb = result.enableb == null ? false : result.enableb;
     document.querySelector("#benable").checked = enableb;
     document.querySelector("#bdisable").checked = !enableb;
 

@@ -7,5 +7,10 @@
   "extensionDescription": {
     "message": "Esta extenção força motores de busca como Google, Bing e Yahoo a usarem o filtro de conteúdo adulto.",
     "description": "Descrição da extensão."
+  },
+
+  "extensionWebsite": {
+    "message" : "https://www.nintersoft.com/portfolio/safesearch-enforcer/",
+    "description" : "URL da página da extensão"
   }
 }
