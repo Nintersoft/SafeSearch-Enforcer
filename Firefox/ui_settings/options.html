@@ -3,33 +3,32 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script src="options.js"></script>
+    <script type="text/javascript" src="options.js"></script>
     <link rel="stylesheet" type="text/css" href="options.css">
   </head>
 
   <body>
 
-    <h1>SafeSearch Enforcer Additional Settings</h1>
+    <h1 data-i18n="title">SafeSearch Enforcer Additional Settings</h1>
 
     <form id="settingsform">
-        <p>You can also block access to specific websites through this extension.</p><br />
-        <label>Enable blacklist: </label>
+        <p data-i18n="settings_desc">You can also block access to specific websites through this extension.</p><br />
+        <label data-i18n="bl_enable_title">Enable blacklist: </label>
         <br />
         <div class="radioitem">
-            <input type="radio" id="benable" class="supmargin" name="blacklist" value="enable"> <label for="benable">Enable</label> <br>
+            <input type="radio" id="benable" class="supmargin" name="blacklist" value="enable"> <label for="benable" data-i18n="enable">Enable</label> <br>
         </div>
         <div class="radioitem">
-            <input type="radio" id="bdisable" class="supmargin" name="blacklist" value="disable"> <label for="bdisable">Disable</label>
+            <input type="radio" id="bdisable" class="supmargin" name="blacklist" value="disable"> <label for="bdisable" data-i18n="disable">Disable</label>
         </div>
 
         <br />
-        <label>Blacklisted websites (one per line) [RegExp compatible]: <br />
-            <textarea name="blacklisted" class="blacklistarea supmargin" placeholder="sitetobeblocked.com&#10;othersitetobeblocked.com"></textarea>
-        </label>
+        <label for="blacklisted" data-i18n="bl_web_label">Blacklisted websites (one per line) [RegExp compatible]: </label><br />
+        <textarea id="blacklisted" name="blacklisted" class="blacklistarea supmargin" placeholder="sitetobeblocked.com&#10;othersitetobeblocked.com" data-i18n_placeholder="ph_blacklisted"></textarea>
 
         <br />
-        <button class="button supmargin" type="submit">SAVE</button>
-        <button class="button supmargin" type="reset">RESET</button>
+        <button class="button supmargin" type="submit" data-i18n="bt_save">SAVE</button>
+        <button class="button supmargin" type="reset" data-i18n="bt_reset">RESET</button>
     </form>
 
   </body>

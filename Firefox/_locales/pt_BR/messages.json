@@ -12,5 +12,145 @@
   "extensionWebsite": {
     "message" : "https://www.nintersoft.com/portfolio/safesearch-enforcer/",
     "description" : "URL da página da extensão"
+  },
+
+  "options_ui_title": {
+    "message" : "Configurações adicionais do SafeSearch Enforcer",
+    "description" : "Título da página de extensões"
+  },
+
+  "options_ui_settings_desc": {
+    "message" : "Você também pode acessar sites específicos através desta extensão.",
+    "description" : "Descrição das configurações adicionais"
+  },
+
+  "options_ui_bl_enable_title": {
+    "message" : "Ativar bloqueio: ",
+    "description" : "Etiqueta de ativar bloqueio de sites"
+  },
+
+  "options_ui_enable": {
+    "message" : "Ativar",
+    "description" : "Opção de ativar"
+  },
+
+  "options_ui_disable": {
+    "message" : "Desativar",
+    "description" : "Opção de desativar"
+  },
+
+  "options_ui_bl_web_label": {
+    "message" : "Sites bloqueados (um por linha) [compatível com RegExp]: ",
+    "description" : "Etiqueta da lista negra"
+  },
+
+  "options_ui_ph_blacklisted": {
+    "message" : "siteaserbloqueado.com\noutrositeaserbloqueado.com",
+    "description" : "Placeholder da lista negra"
+  },
+
+  "options_ui_bt_save": {
+    "message" : "SALVAR",
+    "description" : "Botão Salvar"
+  },
+
+  "options_ui_bt_reset": {
+    "message" : "REDEFINIR",
+    "description" : "Botão redefinir"
+  },
+
+  "page_ui_welcome_page_title" : {
+    "message" : "Bem vindo | SafeSearch Enforcer",
+    "description" : "Título da página de boas vindas"
+  },
+
+  "page_ui_welcome_title" : {
+    "message" : "Seja bem vindo ao SafeSearch Enforcer!",
+    "description" : "Destaque de boas vindas"
+  },
+
+  "page_ui_welcome_message" : {
+    "message" : "Recomendamos que você implemente o OpenDNS em sua rede doméstica/corporativa a fim de ter uma maior proteção familiar. Com esta ferramenta, você estará hábil a controlar quais tipos de site devem ser bloqueados em sua rede. Dê uma olhada em como conseguir isto clicanco no link a seguir (o conteúdo pode estar disponível somente em inglês):",
+    "description" : "Sugestão de implementação do OpenDNS"
+  },
+
+  "page_ui_footer1_title" : {
+    "message" : "Visite nosso site",
+    "description" : "Texto de título do rodapé 1"
+  },
+
+  "page_ui_a_href_footer1_link" : {
+    "message" : "https://www.nintersoft.com/",
+    "description" : "Link do rodapé 1"
+  },
+
+  "page_ui_footer1_desc" : {
+    "message" : "Gostaríamos de convidá-lo a visitar nosso site e checar outros projetos desenvolvidos por nossa equipe (a maioria deles também são de código aberto).",
+    "description" : "Mensagem do link de rodapé 1"
+  },
+
+  "page_ui_footer2_title" : {
+    "message" : "Doar",
+    "description" : "Texto de título do rodapé 2"
+  },
+
+  "page_ui_a_href_footer2_link" : {
+    "message" : "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T6XGWF3UXNT62",
+    "description" : "Link de doação do PayPal"
+  },
+
+  "page_ui_a_alt_footer2_link" : {
+    "message" : "Link de doação do PayPal",
+    "description" : "Texto alternativo para o link de doação do PayPal"
+  },
+
+  "page_ui_footer2_desc" : {
+    "message" : "Ajude-nos a manter este plugin maravilhoso!",
+    "description" : "Mensagem do link de rodapé 2"
+  },
+
+  "page_ui_a_href_footer2_donate" : {
+    "message" : "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T6XGWF3UXNT62",
+    "description" : "Link de doação do PayPal"
+  },
+
+  "page_ui_a_content_footer2_donate" : {
+    "message" : "<< DOAR >>",
+    "description" : "Texto do link de doação do PayPal"
+  },
+
+  "page_ui_footer3_title" : {
+    "message" : "Suporte",
+    "description" : "Texto de título do rodapé 3"
+  },
+
+  "page_ui_a_href_footer3_link" : {
+    "message" : "https://www.nintersoft.com/suporte/",
+    "description" : "Link de suporte Nintersoft"
+  },
+
+  "page_ui_a_alt_footer3_link" : {
+    "message" : "Página de suporte Nintersoft",
+    "description" : "Texto alternativo para link de suporte Nintersoft"
+  },
+
+  "page_ui_footer3_desc" : {
+    "message" : "Caso você tenha algum problema/ dúvida/ sugestão...\nNão hesite em entrar em contato conosco.\nNossa equipe está sempre pronta para ajudá-lo!",
+    "description" : "Mensagem do link de rodapé 3"
+  },
+
+  "page_ui_blocked_page_title" : {
+    "message" : "Bloqueado | SafeSearch Enforcer",
+    "description" : "Título da página de bloqueio"
+  },
+
+  "page_ui_blocked_title" : {
+    "message" : "Este site foi bloqueado!",
+    "description" : "Destaque de bloqueio"
+  },
+
+  "page_ui_blocked_message" : {
+    "message" : "A URL que você estava tentando acessar foi bloqueada pelo administrador. Se você acredita que isto foi um engano, peça-o para remover a URL da lista de regras de bloqueio.",
+    "description" : "Mensagem de bloqueio"
   }
 }

@@ -1,6 +1,6 @@
 function saveOptions(e) {
   e.preventDefault();
-  
+
   browser.storage.sync.set({
     enableb: document.querySelector("#benable").checked,
     blacklisted: document.querySelector('[name="blacklisted"]').value
@@ -15,8 +15,16 @@ function restoreDefault(e) {
   document.querySelector("#bdisable").checked = true;
   document.querySelector('[name="blacklisted"]').value = "";
   browser.storage.sync.clear();
-  
+
   browser.runtime.reload();
+}
+
+function translateUI() {
+  for (let elem of document.querySelectorAll("[data-i18n]"))
+    elem.textContent = browser.i18n.getMessage(`options_ui_${elem.dataset.i18n}`);
+
+  for (let elem of document.querySelectorAll("[data-i18n_placeholder]"))
+      elem.placeholder = browser.i18n.getMessage(`options_ui_${elem.dataset.i18n_placeholder}`);
 }
 
 function restoreOptions() {
@@ -41,4 +49,5 @@ function restoreOptions() {
   document.querySelector("#settingsform").addEventListener("reset", restoreDefault);
 }
 
+document.addEventListener("DOMContentLoaded", translateUI);
 document.addEventListener("DOMContentLoaded", restoreOptions);
