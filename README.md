@@ -1,4 +1,4 @@
-#SafeSearch Enforcer
+# SafeSearch Enforcer
 
 This extension enforces safesearch at search engines like Google, Bing and Yahoo.
 
@@ -16,12 +16,12 @@ Once this project is supported by Nintersoft open source licence you either can 
 
 If you clone this directory into yours, please put a linkback to our webpage and the correct references for out team, also leaving the original README in your repository.
 
-Graciously,
+Graciously,\
 Mauro Mascarenhas - Nintersoft.
-=============
 
-##PT
-#SafeSearch Enforcer
+## PT
+
+# SafeSearch Enforcer
 
 Esta extenção força motores de busca como Google, Bing and Yahoo a usarem o filtro de conteúdo adulto.
 
@@ -38,5 +38,5 @@ Uma vez que este projeto encontra-se sob a licença de código aberto Nintersoft
  
 Caso importe este repositório para seu Git, por favor coloque um link para nossa página e as referências cabíveis à nossa equipe, além de manter o README original.
 
-Atenciosamente,
+Atenciosamente,\
 Mauro Mascarenhas - Nintersoft.
