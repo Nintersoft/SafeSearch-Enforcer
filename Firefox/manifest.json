@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "__MSG_extensionName__",
-	"version": "1.2.6",
+	"version": "1.3.4",
 
 	"default_locale": "en_GB",
 
@@ -21,15 +21,22 @@
 					"http://*/",
 					"https://*/"],
 
-	"web_accessible_resources": ["safety_filter/blocked.html",
-								 "safety_filter/style.css"],
+	"web_accessible_resources": ["static/blocked.html",
+								 "static/js/jquery.min.js",
+								 "static/js/popper.min.js",
+								 "static/js/bootstrap.min.js",
+								 "static/js/translate.min.js",
+								 "static/css/bootstrap.min.css",
+								 "static/css/bootstrap.min.css.map"],
 
 	"background": {
 		"scripts": ["safety_filter/safeit.js"]
 	},
 
 	"options_ui" : {
-		"page" : "ui_settings/options.html"
+		"page" : "static/options.html",
+		"browser_style" : false,
+		"open_in_tab" : true
 	},
 
 	"applications" : {

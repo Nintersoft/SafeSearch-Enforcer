@@ -1,156 +1,211 @@
 {
-  "extensionName": {
-    "message": "SafeSearch Enforcer",
-    "description": "Name of the extension."
-  },
+	"extensionName": {
+		"message": "SafeSearch Enforcer",
+		"description": "Name of the extension."
+	},
 
-  "extensionDescription": {
-    "message": "This extension enforces safesearch at search engines like Google, Bing and Yahoo",
-    "description": "Description of the extension."
-  },
+	"extensionDescription": {
+		"message": "This extension enforces safesearch at search engines like Google, Bing and Yahoo",
+		"description": "Description of the extension."
+	},
 
-  "extensionWebsite": {
-    "message" : "https://www.nintersoft.com/en/portfolio/safesearch-enforcer-2/",
-    "description" : "Homepage URL"
-  },
+	"extensionWebsite": {
+		"message" : "https://www.nintersoft.com/en/portfolio/safesearch-enforcer-2/",
+		"description" : "Homepage URL"
+	},
 
-  "options_ui_title": {
-    "message" : "SafeSearch Enforcer Additional Settings",
-    "description" : "Settings page title"
-  },
+	"options_ui_title": {
+		"message" : "Settings | SafeSearch Enforcer",
+		"description" : "Settings page title"
+	},
 
-  "options_ui_settings_desc": {
-    "message" : "You can also block access to specific websites through this extension.",
-    "description" : "Description of the additional settings"
-  },
+	"options_ui_settings_desc": {
+		"message" : "You can also block access to specific websites through this extension.",
+		"description" : "Description of the additional settings"
+	},
 
-  "options_ui_bl_enable_title": {
-    "message" : "Enable blacklist: ",
-    "description" : "Enable blacklist label"
-  },
+	"options_ui_bl_enable_title": {
+		"message" : "Enable blacklist: ",
+		"description" : "Enable blacklist label"
+	},
 
-  "options_ui_enable": {
-    "message" : "Enable",
-    "description" : "Enable radio button"
-  },
+	"options_ui_enable": {
+		"message" : "Enable",
+		"description" : "Enable radio button"
+	},
 
-  "options_ui_disable": {
-    "message" : "Disable",
-    "description" : "Disable radio button"
-  },
+	"options_ui_disable": {
+		"message" : "Disable",
+		"description" : "Disable radio button"
+	},
 
-  "options_ui_bl_web_label": {
-    "message" : "Blacklisted websites (one per line) [RegExp compatible]: ",
-    "description" : "Blacklist websites label"
-  },
+	"options_ui_bl_web_label": {
+		"message" : "Blacklisted websites (one per line) [RegExp compatible]: ",
+		"description" : "Blacklist websites label"
+	},
 
-  "options_ui_ph_blacklisted": {
-    "message" : "sitetobeblocked.com\nothersitetobeblocked.com",
-    "description" : "Blacklist placeholder"
-  },
+	"options_ui_ph_blacklisted": {
+		"message" : "sitetobeblocked.com\nothersitetobeblocked.com",
+		"description" : "Blacklist placeholder"
+	},
 
-  "options_ui_bt_save": {
-    "message" : "SAVE",
-    "description" : "Save button"
-  },
+	"options_ui_bt_save": {
+		"message" : "SAVE",
+		"description" : "Save button"
+	},
 
-  "options_ui_bt_reset": {
-    "message" : "RESET",
-    "description" : "Reset button"
-  },
+	"options_ui_bt_reset": {
+		"message" : "RESET",
+		"description" : "Reset button"
+	},
 
-  "page_ui_welcome_page_title" : {
-    "message" : "Welcome | SafeSearch Enforcer",
-    "description" : "Welcome page title"
-  },
+	"options_ui_msg_reset_title" : {
+		"message" : "Warning | SafeSearch Enforcer",
+		"description" : "'Settings reset' modal title"
+	},
 
-  "page_ui_welcome_title" : {
-    "message" : "You're Welcome to SafeSearch Enforcer!",
-    "description" : "Welcome page featured message"
-  },
+	"options_ui_msg_reset_description" : {
+		"message" : "You are bound to reset the extension's settings to its standard values.\nThis action cannot be undone. Do you want to proceed?",
+		"description" : "'Settings reset' modal description"
+	},
 
-  "page_ui_welcome_message" : {
-    "message" : "We recommend you to implement OpenDNS in your organization/domestic network so as to have a complete family protection. With this tool you will be able to control which type of websites should be blocked in your network. Have a look on how to achieve it by clicking in the following link:",
-    "description" : "OpenDNS implementation suggestion"
-  },
+	"options_ui_msg_info_title" : {
+		"message" : "Info | SafeSearch Enforcer",
+		"description" : "'Settings saved!' modal title"
+	},
 
-  "page_ui_footer1_title" : {
-    "message" : "Visit our website",
-    "description" : "Fotter 1 title text"
-  },
+	"options_ui_msg_info_description" : {
+		"message" : "Options saved successfully!",
+		"description" : "'Settings saved!' modal description"
+	},
 
-  "page_ui_a_href_footer1_link" : {
-    "message" : "https://www.nintersoft.com/en/",
-    "description" : "Footer 1 link"
-  },
+	"options_ui_bt_cancel" : {
+		"message" : "Cancel",
+		"description" : "'Cancel' button text"
+	},
 
-  "page_ui_footer1_desc" : {
-    "message" : "We would like to invite you to visit our website and check other projects developed by our team (most of them are open source as well).",
-    "description" : "Footer 1 link message"
-  },
+	"options_ui_bt_ok" : {
+		"message" : "Ok",
+		"description" : "'Ok' button text"
+	},
 
-  "page_ui_footer2_title" : {
-    "message" : "Donate",
-    "description" : "Footer 2 title text"
-  },
+	"page_ui_welcome_page_title" : {
+		"message" : "Welcome | SafeSearch Enforcer",
+		"description" : "Welcome page title"
+	},
 
-  "page_ui_a_href_footer2_link" : {
-    "message" : "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UYVKE32ANSUYY",
-    "description" : "PayPal donation link"
-  },
+	"page_ui_welcome_title" : {
+		"message" : "You're Welcome to SafeSearch Enforcer!",
+		"description" : "Welcome page featured message"
+	},
 
-  "page_ui_a_alt_footer2_link" : {
-    "message" : "PayPal donation link",
-    "description" : "Alternative text for PayPal donation link"
-  },
+	"page_ui_welcome_message" : {
+		"message" : "We recommend you to implement OpenDNS in your organization/domestic network so as to have a complete family protection. With this tool you will be able to control which type of websites should be blocked in your network. Have a look on how to achieve it by clicking in the following link:",
+		"description" : "OpenDNS implementation suggestion"
+	},
 
-  "page_ui_footer2_desc" : {
-    "message" : "Help us keep improving this awesome plugin!",
-    "description" : "Footer 2 link message"
-  },
+	"page_ui_footer1_title" : {
+		"message" : "Visit our website",
+		"description" : "Fotter 1 title text"
+	},
 
-  "page_ui_a_href_footer2_donate" : {
-    "message" : "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T6XGWF3UXNT62",
-    "description" : "PayPal donation link"
-  },
+	"page_ui_a_href_footer1_link" : {
+		"message" : "https://www.nintersoft.com/en/",
+		"description" : "Footer 1 link"
+	},
 
-  "page_ui_a_content_footer2_donate" : {
-    "message" : "<< DONATE >>",
-    "description" : "PayPal donation link text"
-  },
+	"page_ui_footer1_desc" : {
+		"message" : "We would like to invite you to visit our website and check other projects developed by our team (most of them are open source as well).",
+		"description" : "Footer 1 link message"
+	},
 
-  "page_ui_footer3_title" : {
-    "message" : "Get Support!",
-    "description" : "Footer 3 title text"
-  },
+	"page_ui_footer2_title" : {
+		"message" : "Donate",
+		"description" : "Footer 2 title text"
+	},
 
-  "page_ui_a_href_footer3_link" : {
-    "message" : "https://www.nintersoft.com/en/support/",
-    "description" : "Nintersoft support link"
-  },
+	"page_ui_a_href_footer2_link" : {
+		"message" : "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UYVKE32ANSUYY",
+		"description" : "PayPal donation link"
+	},
 
-  "page_ui_a_alt_footer3_link" : {
-    "message" : "Nintersoft support page",
-    "description" : "Nintersoft support link alternative text"
-  },
+	"page_ui_a_alt_footer2_link" : {
+		"message" : "PayPal donation link",
+		"description" : "Alternative text for PayPal donation link"
+	},
 
-  "page_ui_footer3_desc" : {
-    "message" : "Should you have any trouble/ doubt/ suggestion...\nDo not hesitate in getting in touch with us.\nOur team is always ready to help you!",
-    "description" : "Footer 3 link message"
-  },
+	"page_ui_footer2_desc" : {
+		"message" : "Help us keep improving this awesome plugin!",
+		"description" : "Footer 2 link message"
+	},
 
-  "page_ui_blocked_page_title" : {
-    "message" : "Blocked | SafeSearch Enforcer",
-    "description" : "Blocked page title"
-  },
+	"page_ui_a_href_footer2_donate" : {
+		"message" : "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T6XGWF3UXNT62",
+		"description" : "PayPal donation link"
+	},
 
-  "page_ui_blocked_title" : {
-    "message" : "This site has been blocked!",
-    "description" : "Blocked title"
-  },
+	"page_ui_a_content_footer2_donate" : {
+		"message" : "<< DONATE >>",
+		"description" : "PayPal donation link text"
+	},
 
-  "page_ui_blocked_message" : {
-    "message" : "The URL you were trying to access has been blocked by the administrator. If you believe it was a mistake, ask him/her to remove the URL from the blacklist rule.",
-    "description" : "Blocked content message"
-  }
+	"page_ui_footer3_title" : {
+		"message" : "Get Support!",
+		"description" : "Footer 3 title text"
+	},
+
+	"page_ui_a_href_footer3_link" : {
+		"message" : "https://www.nintersoft.com/en/support/",
+		"description" : "Nintersoft support link"
+	},
+
+	"page_ui_a_alt_footer3_link" : {
+		"message" : "Nintersoft support page",
+		"description" : "Nintersoft support link alternative text"
+	},
+
+	"page_ui_footer3_desc" : {
+		"message" : "Should you have any trouble/ doubt/ suggestion...\nDo not hesitate in getting in touch with us.\nOur team is always ready to help you!",
+		"description" : "Footer 3 link message"
+	},
+
+	"page_ui_blocked_page_title" : {
+		"message" : "Blocked | SafeSearch Enforcer",
+		"description" : "Blocked page title"
+	},
+
+	"page_ui_blocked_title" : {
+		"message" : "This site has been blocked!",
+		"description" : "Blocked title"
+	},
+
+	"page_ui_blocked_message" : {
+		"message" : "The URL you were trying to access has been blocked by the administrator. If you believe it was a mistake, ask him/her to remove the URL from the blacklist rule.",
+		"description" : "Blocked content message"
+	},
+
+	"page_ui_blocked_site" : {
+		"message" : "Website:",
+		"description" : "'Website' tag on block page"
+	},
+
+	"page_ui_blocked_reason" : {
+		"message" : "Reason:",
+		"description" : "'Reason' tag on block page"
+	},
+
+	"block_ui_blocklist" : {
+		"message" : "This website has been blocked by the system administrator. If you believe it was a mistake, please, ask him/her to change the block rules for this URL.",
+		"description" : "Blockage justification for being on 'block list'"
+	},
+
+	"block_ui_over18" : {
+		"message" : "This page is currently classified as NSFW (+18).",
+		"description" : "Blockage justification for being NSFW"
+	},
+
+	"block_ui_cant_check" : {
+		"message" : "It was not possible to retrieve the website data through API call so as to check the URL safety status.",
+		"description" : "Blockage justification due to API validation error"
+	}
 }
