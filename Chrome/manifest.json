@@ -1,20 +1,41 @@
 {
 	"manifest_version": 2,
 	"name": "__MSG_extensionName__",
-	"version": "1.1.10",
+	"version": "1.3.4",
 	
 	"default_locale": "en_GB",
 	
 	"description": "__MSG_extensionDescription__",
+	
+	"homepage_url": "https://www.nintersoft.com/en/portfolio/safesearch-enforcer-2/",
 
 	"icons": {
 		"48": "icons/Logo_48.png",
 		"96": "icons/Logo_96.png"
 	},
 
-    "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/"],
+    "permissions": ["tabs",
+					"storage",
+					"webRequest",
+					"webRequestBlocking",
+					"http://*/",
+					"https://*/"],
+
+	"web_accessible_resources": ["static/blocked.html",
+								 "static/js/jquery.min.js",
+								 "static/js/popper.min.js",
+								 "static/js/bootstrap.min.js",
+								 "static/js/translate.min.js",
+								 "static/css/bootstrap.min.css",
+								 "static/css/bootstrap.min.css.map"],
 
 	"background": {
-		"scripts": ["safeIt.js"]
+		"scripts": ["safety_filter/safeit.js"]
+	},
+
+	"options_ui" : {
+		"page" : "static/options.html",
+		"browser_style" : false,
+		"open_in_tab" : true
 	}
 }
